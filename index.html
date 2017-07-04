@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="estilos.css">
+    <!--Start of Zendesk Chat Script Zopim-->
+<!-- <script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="https://v2.zopim.com/?3wNxNULtAsbZ4jnsbnFoDBNAVFcp4j3K";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script> -->
+<!--End of Zendesk Chat Script-->
+  </head>
+  <body>
+    <div class="contenedor">
+      <section class="container" id="container">
+        <div class="menu" id="menu">
+          <img id="logo" class="logo" src="img/LOGO ALMENAT.png" alt="">
+          <ul id="opciones" class="opciones">
+            <a href="index.html"><li class="menuOpciones">Inicio</li></a>
+            <a href="productos.html"><li class="menuOpciones">Productos</li></a>
+            <a href="quienes.html"><li class="menuOpciones">Quienes Somos</li></a>
+            <a href="contacto.html"><li class="menuOpciones">Contácto</li></a>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <section class="banner">BANNER</section>
+    <section class="categorias">
+      <div class="imagen uno"><div><h1>Titulo<br></h1><h2>descripción de el producto<br></h2><h3>link</h3></div></div>
+      <div class="imagen dos"><div><h1>Titulo<br></h1><h2>descripción de el producto<br></h2><h3>link</h3></div></div>
+      <div class="imagen tres"><div><h1>Titulo<br></h1><h2>descripción de el producto<br></h2><h3>link</h3></div></div>
+    </section>
+    <section class="resto"> </section>
+  </body>
+  <script type="text/javascript">
+
+  window.addEventListener('scroll', function(e){
+    console.log(window.scrollY);
+                if(window.scrollY > 100){
+                  document.getElementById('container').style.height = "60px";
+                  document.getElementById('logo').style.width = "85px";
+                  document.getElementById("opciones").style.marginTop = "5px";
+                }else{
+                  if (window.scrollY < 100) {
+                    document.getElementById('container').style.height = "118px";
+                    document.getElementById('logo').style.width = "155px";
+                    document.getElementById("opciones").style.marginTop = "50px";
+                  }
+                }
+        });
+  </script>
+</html>

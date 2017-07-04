@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <div class="contenedor">
+      <section class="container" id="container">
+        <div class="menu" id="menu">
+          <img id="logo" class="logo" src="img/LOGO ALMENAT.png" alt="">
+          <ul id="opciones" class="opciones">
+            <a href="index.html"><li class="menuOpciones">Inicio</li></a>
+            <a href="productos.html"><li class="menuOpciones">Productos</li></a>
+            <a href="quienes.html"><li class="menuOpciones">Quienes Somos</li></a>
+            <a href="contacto.html"><li class="menuOpciones">Contácto</li></a>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <section class="informacion containerQuienes">
+      <p><br><br><br>
+        <strong>Misión</strong><br><br>
+        Ofrecer a nuestros clientes un producto que contribuya a su  nutrición y bienestar, garantizando la inocuidad del mismo,
+        al llevar procesos de buenas prácticas de manufactura con calidad competente,
+        comprometidos en proporcionar un excelente servicio a la sociedad y aportar buen desarrollo al país.<br><br>
+        <strong>Visión</strong><br><br>
+        Ser una compañía preferida de alimentos, conservando siempre la calidad de nuestros productos a nivel nutricional para brindar bienestar,
+        esto para lograr posesionarnos en los próximos años en el mercado colombiano como una de las empresas más competitivas,
+        llevando nuestros productos a un nivel cualificado, conservando siempre una calidad intachable para nuestros clientes.<br><br>
+        <strong>Politicas</strong><br><br>
+        <li>Servir a nuestro consumidores con calidad, servicio y honestidad para alcanzar máximos niveles de competitividad en el mercado nacional.</li><br>
+        <li>Relaciones personales basada en la confianza y el respeto mutuo, en un ambiente sano y propicio para que los empleados tengan un compromiso ético y serio con lo que se está fabricando.</li><br>
+        <li>Comprometidos en una sólida ética laboral desarrollamos cursos de capitación, al fin de mantener dentro de los empleados un correcto compromiso con la empresa para su buen funcionamiento.</li><br>
+        <li>•	Compromiso con prácticas empresariales, medioambientales sostenibles, que ayudan a mejorar el ecosistema.</li><br>
+      </p>
+    </section>
+  </body>
+  <script type="text/javascript">
+
+  window.addEventListener('scroll', function(e){
+    console.log(window.scrollY);
+                if(window.scrollY > 100){
+                  document.getElementById('container').style.height = "60px";
+                  document.getElementById('logo').style.width = "85px";
+                  document.getElementById("opciones").style.marginTop = "5px";
+                }else{
+                  if (window.scrollY < 100) {
+                    document.getElementById('container').style.height = "118px";
+                    document.getElementById('logo').style.width = "155px";
+                    document.getElementById("opciones").style.marginTop = "50px";
+                  }
+                }
+        });
+  </script>
+</html>
