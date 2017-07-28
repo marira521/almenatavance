@@ -3,22 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
   </head>
   <body>
-    <div class="contenedor">
+    <header>
       <section class="container" id="container">
-        <div class="menu" id="menu">
-          <img id="logo" class="logo" src="img/LOGO ALMENAT.png" alt="">
+        <figure id="logo" class="logo">
+          <img id="logoImagen" src="img/LOGO ALMENAT.png" alt="">
+        </figure>
+        <span id="burguer-button" class="burguer-button icon-menu"></span>
+        <nav class="menu" id="menu">
           <ul id="opciones" class="opciones">
-            <a href="index.html"><li class="menuOpciones">Inicio</li></a>
-            <a href="productos.html"><li class="menuOpciones">Productos</li></a>
-            <a href="quienes.html"><li class="menuOpciones">Quienes Somos</li></a>
-            <a href="contacto.html"><li class="menuOpciones">Contácto</li></a>
+            <li class="menuOpciones"><a href="index.html">Inicio</a></li>
+            <li class="menuOpciones"><a href="productos.html">Productos</a></li>
+            <li class="menuOpciones"><a href="quienes.html">Quienes Somos</a></li>
+            <li class="menuOpciones"><a href="contacto.html">Contácto</a></li>
           </ul>
-        </div>
+        </nav>
       </section>
-    </div>
+    </header>
     <section class="informacion containerQuienes">
       <p><br><br><br>
         <strong>Misión</strong><br><br>
@@ -37,21 +41,60 @@
       </p>
     </section>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
   <script type="text/javascript">
 
   window.addEventListener('scroll', function(e){
     console.log(window.scrollY);
                 if(window.scrollY > 100){
-                  document.getElementById('container').style.height = "60px";
-                  document.getElementById('logo').style.width = "85px";
-                  document.getElementById("opciones").style.marginTop = "5px";
+                  document.getElementById('container').style.height = "80px";
+                  document.getElementById('container').style.width = "100%";
+                  document.getElementById('container').style.backgroundColor = "white";
+                  document.getElementById('logo').style.display = "none";
+                  document.getElementById("menu").style.top = "25px";
+                  document.getElementById("menu").style.right = "25px";
                 }else{
                   if (window.scrollY < 100) {
                     document.getElementById('container').style.height = "118px";
-                    document.getElementById('logo').style.width = "155px";
-                    document.getElementById("opciones").style.marginTop = "50px";
+                    document.getElementById('container').style.width = "80%";
+                    document.getElementById('logo').style.display = "block";
+                    document.getElementById("menu").style.top = "30px";
+                    document.getElementById("menu").style.right = "0px";
+
                   }
                 }
         });
+// burguer menu
+        var consulta = window.matchMedia('(max-width: 500px)');
+        consulta.addListener(mediaQuery);
+
+        var $burguerButton = document.getElementById('burguer-button');
+        var $menu = document.getElementById('menu');
+        function toggleMenu(){
+          $menu.classList.toggle('active');
+        };
+
+        function mediaQuery(){
+          if (consulta.matches) {
+            $burguerButton.addEventListener('touchstart', toggleMenu);
+          }else{
+            $burguerButton.removeEventListener('touchstart', toggleMenu);
+          }
+        }
+        mediaQuery();
+
+        //gestos touch
+        function showMenu(){
+          $menu.classList.add('active');
+        };
+        function hideMenu(){
+          $menu.classList.remove('active');
+        };
+
+        var $body = document.body;
+        var gestos = new Hammer($body);
+          gestos.on('swipeleft', hideMenu);
+          gestos.on('swiperight', showMenu);
+
   </script>
 </html>

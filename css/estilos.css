@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+body{
+  font-family: 'Droid Serif', serif;
+}
+/*menu*/
+header{
+  width: 100%;
+  height: 118px;
+  background: white;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+}
+.container{
+  /*background: #ceffda;*/
+  width: 80%;
+  height: 118px;
+  color: #47700e;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  transition: .5s all;
+}
+.logo{
+  position: absolute;
+  width: 150px;
+  margin: 10px 0 10px 50px;
+  transition: 1s all;
+}
+.logo img{
+  width: 150px;
+  transition: 1s all;
+}
+.menu{
+  position: absolute;
+  /*border: 1px solid red;*/
+  font-size: 20px;
+  display: inline-block;
+  right: 0;
+  top: 30px;
+  transition: 1s all;
+}
+.menu .opciones a{
+
+  text-decoration: none;
+  color: #47700e;
+}
+.menuOpciones{
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+/*fin de menu*/
+
+/*categorias en index*/
+.categorias{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+.imagen{
+  width: 636px;
+  height: 600px;
+  border: 1px solid black;
+  text-align: center;
+  top: 30px;
+  position: relative;
+}
+.uno{
+  background-color: #82ffb8;
+}
+.dos{
+  background-color: #7ebdfc;
+}
+.tres{
+  background-color: #fc7e7e;
+}
+.descripcionCategorias{
+  height: 200px;
+  width: 50%;
+  position: absolute;
+  margin-left:auto;
+  margin-right:auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+}
+/*final categorias en index*/
+/*productos*/
+.containerProductos, .containerQuienes{
+  width: 930px;
+  margin: 0 auto;
+  display: block;
+}
+.containerQuienes, .contenedorDecorado{
+  position: relative;
+  overflow: hidden;
+}
+.contenedorDecorado{
+  margin-top: 30px;
+  height: 200px;
+}
+.mapa{
+  display: inline-block;
+}
+.decorado{
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background-image: url(../img/fondocontacto.jpg);
+  transform: translateY(-33px) skewY(-2deg);
+}
+.infoContacto{
+  display: inline-block;
+  top: 0;
+  position: absolute;
+  margin-left: 20px;
+  font-size: 18px;
+}
+.infoContacto b{
+  color: #47700e;
+}
+.productos{
+  display: inline-block;
+  width: 290px;
+  height: 362px;
+  margin: 6px 6px;
+  background: rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+  transition: 1s;
+  position: relative;
+}
+#productosInfo{
+  text-align: center;
+  width: 295px;
+  height: 362px;
+  background: yellow;
+  margin: 6px 6px;
+  position: absolute;
+  left: -290px;
+  top: -5px;
+  transition: 1s;
+  opacity: 0;
+  padding: 10px;
+}
+p#informacion{
+  color: black;
+  text-align: center;
+}
+.productos:hover #productosInfo{
+  left: -5px;
+  top: -5px;
+  opacity: 1;
+}
+.productos img{
+  display: block;
+	margin: 0 auto;
+}
+.imgProductos{
+  display: block;
+  width: 290px;
+  height: 200px;
+}
+.contenedorFondo{
+  width: 100vw;
+  background-image: url('../img/fondo.png');
+  background-attachment: fixed;
+  background-position: center;
+}
+/*productos body{
+
+}/*
+/*fin productos*/
+/*modal*/
+.btn.btn-primary{
+  background-color: green;
+  margin: 30px 0;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+/*fin del modal*/
+
+/*burguer botn*/
+.burguer-button{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #395667;
+  text-align: center;
+  cursor: pointer;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 3;
+  display: none;
+}
+/*fin del burguer*/
+
+@media screen and (max-width: 965px){
+/*productos*/
+.containerProductos{
+  width: 90vw;
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+/*fin de productos*/
+/*menu*/
+.container{
+  width: 100vh;
+}
+/*fin del menu*/
+.categorias{
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+}
+
+@media screen and (max-width: 500px){
+/*menu*/
+.burguer-button{
+  display: inline-block;
+}
+.menu{
+  background: rgba(206, 255, 218, 0.9);
+  position: fixed;
+  width: 100vw;
+  left: -200%;
+  top: -1px;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  transition: .3s;
+  color: #47700e;
+}
+.menu.active{
+  left: 0;
+}
+.menu ul{
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+.menu li{
+ display: block;
+ margin: 0;
+ font-size: 24px;
+ padding: 8px 0;
+ border-bottom: solid white 2px;
+}
+.menu li:first-child{
+  border-top: solid white 2px;
+}
+.container{
+  width: 100%;
+}
+.logo{
+  right: 0;
+}
+/*fin del menu*/
+
+.banner{
+  width: 95vw;
+  height: 100vh;
+}
+
+.categorias{
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+}

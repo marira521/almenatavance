@@ -3,145 +3,424 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
   </head>
   <body>
-    <div class="contenedor">
+    <header>
       <section class="container" id="container">
-        <div class="menu" id="menu">
-          <img id="logo" class="logo" src="img/LOGO ALMENAT.png" alt="">
+        <figure id="logo" class="logo">
+          <img id="logoImagen" src="img/LOGO ALMENAT.png" alt="">
+        </figure>
+        <span id="burguer-button" class="burguer-button icon-menu"></span>
+        <nav class="menu" id="menu">
           <ul id="opciones" class="opciones">
-            <a href="index.html"><li class="menuOpciones">Inicio</li></a>
-            <a href="productos.html"><li class="menuOpciones">Productos</li></a>
-            <a href="quienes.html"><li class="menuOpciones">Quienes Somos</li></a>
-            <a href="contacto.html"><li class="menuOpciones">Contácto</li></a>
+            <li class="menuOpciones"><a href="index.html">Inicio</a></li>
+            <li class="menuOpciones"><a href="productos.html">Productos</a></li>
+            <li class="menuOpciones"><a href="quienes.html">Quienes Somos</a></li>
+            <li class="menuOpciones"><a href="contacto.html">Contácto</a></li>
           </ul>
-        </div>
+        </nav>
       </section>
-    </div>
+    </header>
     <div class="contenedorFondo">
       <section class="containerProductos">
+        <!-- producto 1 -->
         <div class="productos">
           <div id="productosInfo">
-            <p id="informacion">Titulo<br><button>Detalles</button></p>
+            <p id="informacion"><b>Yeen-Bee-Pollen</b><br>Presentación 240ml<br><br>
+Registro Invima: RSAV19I20114<br><br>
+Alimento natural combinado con ginseng y polen. Estimula el sistema circulatorio y mantiene bien funcionamiento del sistema nervioso, previene la anemia y ayuda a la protección de glóbulos rojos.
+Anti-anémico, memoria, concentración.<br>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-1">Detalles</button></p>
           </div>
           <div class="imgProductos">
             <img src="img/1.png" alt="">
           </div>
-          <br><p>descripción del producto</p>
+          <br><p>Yeen-Bee-Pollen</p>
+          <!-- modal -->
+          <div class="modal fade" id="modal-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" type="button" data-dismiss="modal">&times;</button>
+                  <h1 class="modal-title">Yeen-Bee-Pollen</h1><br>
+                </div>
+                <div class="modal-body">
+                  <img src="img/1.png" alt="">
+                  <p>Ingredientes: Malta, Agua Purificada, Proteína Hidrolizada de Soya, Sorbitol 70% (Edulcorante), Polidextrosa (Fibra Natural), Chontaduro, Borojo, Gluconato de calcio (Fuente de calcio),
+                    Goma Xanthan (Viscosante), Fosfato Tricálcico (fuente de calcio y fósforo), Lecitina de soya (Emulsionante), Polen, Miel de abeja Colorante natural caramelo líquido, Sabor artificial (saborizante), Vitamina C, Benzoato de sodio (conservante),
+                    Ácido critico (Acidulante), Metilparabeno sódico (preservante), Estevia (Edulcorante), Sulfato ferroso (Fuente de Hierro), Vitamina E, Sulfato de Zinc (fuente de Zn), Niacina (Vitamina), Vitamina A T500, Acido pantotenico (Vitamina),
+                    Propil parabeno sódico (preservante), Vitamina B6 (Piridoxina), Vitamina B2 (Riboflavina), Sulfato de cobre pentahidrato, Vitamina B1 (Tiamina), Vitamina d3 T500 (calciferol), Ácido fólico, Vitaminas K y B12 (Cianocobolamina).</p>
+                </div>
+                <div class="modal-footer">
+                  <p>Si desea otra opción</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin del modal -->
         </div>
+        <!-- final producto 1 -->
+        <!-- producto 2 -->
         <div class="productos">
           <div id="productosInfo">
-            <p id="informacion">Titulo<br><button>Detalles</button></p>
+            <p id="informacion">Titulo<br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-2">Detalles</button></p>
           </div>
           <div class="imgProductos">
             <img src="img/2.png" alt="">
           </div>
           <br><p>descripción del producto</p>
+          <!-- modal -->
+          <div class="modal fade" id="modal-2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" type="button" data-dismiss="modal">&times;</button>
+                  <h1 class="modal-title">Titulo</h1><br>
+                </div>
+                <div class="modal-body">
+                  <img src="img/2.png" alt="">
+                  <p>descripción del producto</p>
+                </div>
+                <div class="modal-footer">
+                  <p>Si desea otra opción</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin del modal -->
         </div>
+        <!-- final producto 2 -->
+        <!-- producto 3 -->
         <div class="productos">
           <div id="productosInfo">
-            <p id="informacion">Titulo<br><button>Detalles</button></p>
+            <p id="informacion"><b>Almegen</b><br>Presentación 360gr<br><br>
+Registro Invima: RSAV19I20114<br><br>
+Almalaki, defensas.<br>
+Contiene antioxidantes. Sus componentes se encuentran bio-disponibles a nivel celular. Excelentes resultados en tratamientos de dolencias óseas, artritis en todas sus ramificaciones, el reumatismo y otras dolencias degenerativas de la estructura ósea. Potente antibiótico y antiviral.
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-3">Detalles</button></p>
           </div>
           <div class="imgProductos">
             <img src="img/3.png" alt="">
           </div>
-          <br><p>descripción del producto</p>
+          <br><p>Almegen</p>
+          <!-- modal -->
+          <div class="modal fade" id="modal-3">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" type="button" data-dismiss="modal">&times;</button>
+                  <h1 class="modal-title">Almegen</h1><br>
+                </div>
+                <div class="modal-body">
+                  <img src="img/3.png" alt="">
+                  <p>Ingredientes: Malta, Agua Purificada, Proteína Hidrolizada de Soya, Sorbitol 70% (Edulcorante), Polidextrosa (Fibra Natural), Colageno, Amalaki, Gluconato de calcio (fuente de calcio), Goma Xanthan (Vicosante), Te Verde (Camelia sinesis), Fosfato Tricalcio (fuente de calcio y fosforo), Colorante artificial caramelo, MSM (Metil sulfonil metano), Cloruro de magnesio, Vitamina C, Omega 3, Ajo (Saborizante natural), Curcuma (Colorante natural), Benzoato de sodio (conservante), Ácido cítrico (Acidulante), Metil parabeno sódico (preservante),  Estevia (Edulcorante), sulfato ferroso (Fuente de Hierro), Vitamina E, Sulfacto de Zinc (fuente de Zn), Jenjibre, Niacina (Vitamina), Vitamina A T500, Acido pantotenico (Vitamina), Propil parabeno sódico (preservante), Vitamina B6 (Piridoxina), Vitamina B2 (Riboflavina), Vitamina B1 (Tiamina), Vitamina d3 T500 (calciferol), Ácido folico, Vitaminas K y B12 (Cianocobolamina).</p>
+                </div>
+                <div class="modal-footer">
+                  <p>Si desea otra opción</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin del modal -->
         </div>
+        <!-- final producto 3 -->
+        <!-- producto 4 -->
         <div class="productos">
           <div id="productosInfo">
-            <p id="informacion">Titulo<br><button>Detalles</button></p>
+            <p id="informacion"><b>Almorin</b><br>Presentación 360gr<br><br>
+Registro Invima: RSAV19I20114<br><br>
+Moringa, nutriente<br>
+Recurso valioso que ayuda a prevenir la desnutrición y a vivir de manera saludable y con mas energía. El contenido de proteínas, vitaminas y minerales hacen de este producto nutriente necesario para suplir las necesidades básicas de nuestro organismo.<br>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-4">Detalles</button></p>
           </div>
           <div class="imgProductos">
             <img src="img/4.png" alt="">
           </div>
-          <br><p>descripción del producto</p>
+          <br><p>Almorin – Moringa Oleifera</p>
+          <!-- modal -->
+          <div class="modal fade" id="modal-4">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" type="button" data-dismiss="modal">&times;</button>
+                  <h1 class="modal-title">Almorin – Moringa Oleifera</h1><br>
+                </div>
+                <div class="modal-body">
+                  <img src="img/4.png" alt="">
+                  <p>Ingredientes: Malta, Agua Purificada, Proteína Hidrolizada de Soya, Sorbitol 70% (Edulcorante), Polidextrosa (Fibra Natural), Moringa hojas, Gluconato de calcio (fuente de calcio), Goma Xanthan (Vicosante), Fosfato Tricalcio (fuente de calcio y fosforo), Lecitina de soya (emulcionante), Colorante artificial verde No 3 Cl 42053, Saborizante artificial, Vitamina C, Benzoato de sodio (conservante), Ácido cítrico (Acidulante), Metil parabeno sódico (preservante),  Estevia (Edulcorante), sulfato ferroso (Fuente de Hierro), Vitamina E, Sulfacto de Zinc (fuente de Zn), Niacina (Vitamina), Vitamina A T500, Acido pantotenico (Vitamina), Propil parabeno sódico (preservante), Vitamina B6 (Piridoxina), Vitamina B2 (Riboflavina), Sulfato de cobre pentahidrato, Vitamina B1 (Tiamina), Vitamina d3 T500 (calciferol), Ácido folico, Vitaminas K y B12 (Cianocobolamina).</p>
+                </div>
+                <div class="modal-footer">
+                  <p>Si desea otra opción</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin del modal -->
         </div>
+        <!-- final producto 4 -->
+        <!-- producto 5 -->
         <div class="productos">
           <div id="productosInfo">
-            <p id="informacion">Titulo<br><button>Detalles</button></p>
+            <p id="informacion"><b>Der Bio Pat</b><br>Presentación 6 frascos x 14ml 6 frascos x 5ml<br><br>
+Registro Invima: RSAV19I20114<br><br>
+Anticansancio
+Escelente multivitamínico con huevo de pato liofilizado, Jale real, Magnesio, Vitamina C y Complejo B. Nutre y aumenta la actividad enzimática y la hemoglobina.<br>
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-5">Detalles</button></p>
           </div>
           <div class="imgProductos">
             <img src="img/5.png" alt="">
           </div>
-          <br><p>descripción del producto</p>
+          <br><p>Der Bio Pat</p>
+          <!-- modal -->
+          <div class="modal fade" id="modal-5">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" type="button" data-dismiss="modal">&times;</button>
+                  <h1 class="modal-title">Der Bio Pat</h1><br>
+                </div>
+                <div class="modal-body">
+                  <img src="img/5.png" alt="">
+                  <p>Ingredientes: Malta, Agua Purificada, Proteína Hidrolizada de Soya, Sorbitol 70% (Edulcorante), Polidextrosa (Fibra Natural), Aloe, Huevo de pato liofilizado, gluconato de calcio (fuente de calcio), Goma Xanthan (Vicosante), Fosfato Tricalcio (fuente de calcio y fosforo), Lecitina de soya (emulcionante), Colorante natural caramelo liquido, Saborizante artificial (saborizante), Vitamina C, Benzoato de sodio (conservante), Ácido cítrico (Acidulante), Metil parabeno sódico (preservante),  Estevia (Edulcorante), sulfato ferroso (Fuente de Hierro), Vitamina E, Sulfato de Zinc (fuente de Zn), Niacina (Vitamina), Vitamina A T500, Acido pantotenico (Vitamina), Propil parabeno sódico (preservante), Vitamina B6 (Piridoxina), Vitamina B2 (Riboflavina), Sulfato de cobre pentahidrato, Vitamina B1 (Tiamina), Vitamina d3 T500 (calciferol), Ácido fólico, Vitaminas K y B12 (Cianocobolamina).</p>
+                </div>
+                <div class="modal-footer">
+                  <p>Si desea otra opción</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin del modal -->
         </div>
+        <!-- final producto 5 -->
+        <!-- producto 6 -->
         <div class="productos">
           <div id="productosInfo">
-            <p id="informacion">Titulo<br><button>Detalles</button></p>
+            <p id="informacion"><b>Almevil</b><br>
+Presentación 800gr<br>
+Registro Invima: RSAV11I23314<br>
+Exclusiva formula que combina en forma excepcional ingredientes naturales y orgánicos los cuales trabaja unidos sinérgicamente para ayudar a mejorar la memoria, incrementar y mantener la lucidez mental y asegurar la circulación apropiada de la sangre por el cerebro y el sistema nervioso en la edad adulta. Contiene proteína aislada de soya, vitaminas, minerales y oligoelementos esenciales para un buen vivir.
+
+          <br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-6">Detalles</button></p>
           </div>
           <div class="imgProductos">
             <img src="img/7.png" alt="">
           </div>
-          <br><p>descripción del producto</p>
+          <br><p>Almevil</p>
+          <!-- modal -->
+          <div class="modal fade" id="modal-6">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" type="button" data-dismiss="modal">&times;</button>
+                  <h1 class="modal-title">Almevil</h1><br>
+                </div>
+                <div class="modal-body">
+                  <img src="img/7.png" alt="">
+                  <p>Ingredientes: Maltodextrina (vehiculo), Proteína de soya, lactosuero, fécula, Avena, polidextrosa (Fibra natural), proteína de suero, creatina monohidrato, albumina de huevo, fosfato tricálcico (fuente de calcio), Citrato de calcio (fuente de calcio), saborizante artificial, óxido de magnesio, CMC de alta (espesante), Dióxido de silicio (Anticompactante), Vitamina C, Vitamina E, Benzoato de sodio (Conservante), Estevia (Edulcorante), Omega 3, 6 y 9, fumarato ferroso (fuente de hierro), niacina, Sulfato de Zinc (fuente de Zn), acido pantoténico, Vitamina A, vitamina B6, Sulfato de cobre, Sulfato de Magneso, Vitamina B1, B2, picolinato de cromo, biotina, ácido fólico, vitamina D3 T500, yoduro de potasio, vitaminas K y B12.
+Contiene tartrazina puede causar hipersensibilidad.
+</p>
+                </div>
+                <div class="modal-footer">
+                  <p>Si desea otra opción</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin del modal -->
         </div>
+        <!-- final producto 6 -->
+        <!-- producto 7 -->
         <div class="productos">
           <div id="productosInfo">
-            <p id="informacion">Titulo<br><button>Detalles</button></p>
+            <p id="informacion"><b>BioLion</b><br>
+Presentación 450gr<br><br>
+Registro Invima: RSAV11I23314<br>
+Energico – vigorizante <br>
+Los ingredientes naturales lo convierten en un poderoso suplemento destinado a brindar una efectiva dosis de energía y vitalidad. Ayuda a eliminar problemas de estrés, fatiga y cansancio. Ofrece una estimulación que restaura la vitalidad sexual.
+La mezcla con vitaminas y minerales estabiliza el organismo para un normal funcionamiento.<br>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-7">Detalles</button></p>
           </div>
           <div class="imgProductos">
             <img src="img/8.png" alt="">
           </div>
           <br><p>descripción del producto</p>
+          <!-- modal -->
+          <div class="modal fade" id="modal-7">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" type="button" data-dismiss="modal">&times;</button>
+                  <h1 class="modal-title">Titulo</h1><br>
+                </div>
+                <div class="modal-body">
+                  <img src="img/8.png" alt="">
+                  <p>descripción del producto</p>
+                </div>
+                <div class="modal-footer">
+                  <p>Si desea otra opción</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin del modal -->
         </div>
+        <!-- final producto 7 -->
+        <!-- producto 8 -->
         <div class="productos">
           <div id="productosInfo">
-            <p id="informacion">Titulo<br><button>Detalles</button></p>
+            <p id="informacion">Titulo<br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-8">Detalles</button></p>
           </div>
           <div class="imgProductos">
             <img src="img/9.png" alt="">
           </div>
           <br><p>descripción del producto</p>
+          <!-- modal -->
+          <div class="modal fade" id="modal-8">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" type="button" data-dismiss="modal">&times;</button>
+                  <h1 class="modal-title">Titulo</h1><br>
+                </div>
+                <div class="modal-body">
+                  <img src="img/9.png" alt="">
+                  <p>descripción del producto</p>
+                </div>
+                <div class="modal-footer">
+                  <p>Si desea otra opción</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin del modal -->
         </div>
+        <!-- final producto 8 -->
+        <!-- producto 9 -->
         <div class="productos">
           <div id="productosInfo">
-            <p id="informacion">Titulo<br><button>Detalles</button></p>
+            <p id="informacion">Titulo<br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-9">Detalles</button></p>
           </div>
           <div class="imgProductos">
             <img src="img/10.png" alt="">
           </div>
           <br><p>descripción del producto</p>
+          <!-- modal -->
+          <div class="modal fade" id="modal-9">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" type="button" data-dismiss="modal">&times;</button>
+                  <h1 class="modal-title">Titulo</h1><br>
+                </div>
+                <div class="modal-body">
+                  <img src="img/10.png" alt="">
+                  <p>descripción del producto</p>
+                </div>
+                <div class="modal-footer">
+                  <p>Si desea otra opción</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin del modal -->
         </div>
+        <!-- final producto 9 -->
+        <!-- producto 10 -->
         <div class="productos">
           <div id="productosInfo">
-            <p id="informacion">Titulo<br><button>Detalles</button></p>
+            <p id="informacion"><b>Bio Dervic</b><br>Presentación 10gr x 10und<br><br>
+Registro Invima: RSAV19I20114<br>
+Multivitamínico enriquecido con Vitaminas, Minerales y Huevo de pato liofilizado. Beneficia el sistema inmunológico aumentando las defensas y reduciendo los radicales libres que deterioran el organismo, aumenta la capacidad física, disminuye el cansancio, el estrés y la fatiga.
+
+            <br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-10">Detalles</button></p>
           </div>
           <div class="imgProductos">
             <img src="img/6.png" alt="">
           </div>
-          <br><p>descripción del producto</p>
+          <br><p>Bio Dervic</p>
+          <!-- modal -->
+          <div class="modal fade" id="modal-10">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" type="button" data-dismiss="modal">&times;</button>
+                  <h1 class="modal-title">Bio Dervic</h1><br>
+                </div>
+                <div class="modal-body">
+                  <img src="img/6.png" alt="">
+                  <p>Ingredientes: Malta, Agua Purificada, Proteína Hidrolizada de Soya, Sorbitol 70% (Edulcorante), Polidextrosa (Fibra Natural), Aloe, Huevo de pato liofilizado, gluconato de calcio (fuente de calcio), Goma Xanthan (Vicosante), Fosfato Tricalcio (fuente de calcio y fosforo), Lecitina de soya (emulcionante), Colorante natural caramelo liquido, Saborizante artificial (saborizante), Vitamina C, Benzoato de sodio (conservante), Ácido cítrico (Acidulante), Metil parabeno sódico (preservante),  Estevia (Edulcorante), sulfato ferroso (Fuente de Hierro), Vitamina E, Sulfato de Zinc (fuente de Zn), Niacina (Vitamina), Vitamina A T500, Acido pantotenico (Vitamina), Propil parabeno sódico (preservante), Vitamina B6 (Piridoxina), Vitamina B2 (Riboflavina), Sulfato de cobre pentahidrato, Vitamina B1 (Tiamina), Vitamina d3 T500 (calciferol), Ácido fólico, Vitaminas K y B12 (Cianocobolamina).</p>
+                </div>
+                <div class="modal-footer">
+                  <p>Si desea otra opción</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin del modal -->
         </div>
-
-        <!-- <div class="productosInfo"><p>Titulo <br> descripción del producto</p></div>
-        <div class="productosInfo"><p>Titulo <br> descripción del producto</p></div>
-        <div class="productosInfo"><p>Titulo <br> descripción del producto</p></div>
-        <div class="productosInfo"><p>Titulo <br> descripción del producto</p></div>
-        <div class="productosInfo"><p>Titulo <br> descripción del producto</p></div>
-        <div class="productosInfo"><p>Titulo <br> descripción del producto</p></div>
-        <div class="productosInfo"><p>Titulo <br> descripción del producto</p></div>
-        <div class="productosInfo"><p>Titulo <br> descripción del producto</p></div>
-        <div class="productosInfo"><p>Titulo <br> descripción del producto</p></div>
-        <div class="productosInfo"><p>Titulo <br> descripción del producto</p></div> -->
+        <!-- final producto 10 -->
       </section>
     </div>
   </body>
-  <script type="text/javascript">
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script type="text/javascript">
 
-  window.addEventListener('scroll', function(e){
-    console.log(window.scrollY);
-                if(window.scrollY > 100){
-                  document.getElementById('container').style.height = "60px";
-                  document.getElementById('logo').style.width = "85px";
-                  document.getElementById("opciones").style.marginTop = "5px";
-                }else{
-                  if (window.scrollY < 100) {
-                    document.getElementById('container').style.height = "118px";
-                    document.getElementById('logo').style.width = "155px";
-                    document.getElementById("opciones").style.marginTop = "50px";
-                  }
+window.addEventListener('scroll', function(e){
+                  console.log(window.scrollY);
+                  if(window.scrollY > 100){
+                    document.getElementById('container').style.height = "80px";
+                    document.getElementById('container').style.width = "100%";
+                    document.getElementById('container').style.backgroundColor = "white";
+                    document.getElementById('logo').style.display = "none";
+                    document.getElementById("menu").style.top = "25px";
+                    document.getElementById("menu").style.right = "25px";
+                  }else{
+                    if (window.scrollY < 100) {
+                      document.getElementById('container').style.height = "118px";
+                      document.getElementById('container').style.width = "80%";
+                      document.getElementById('logo').style.display = "block";
+                      document.getElementById("menu").style.top = "30px";
+                      document.getElementById("menu").style.right = "0px";
+                    }
                 }
-        });
+      });
+// burguer menu
+      var consulta = window.matchMedia('(max-width: 500px)');
+      consulta.addListener(mediaQuery);
 
+      var $burguerButton = document.getElementById('burguer-button');
+      var $menu = document.getElementById('menu');
+      function toggleMenu(){
+        $menu.classList.toggle('active');
+      };
 
-  </script>
+      function mediaQuery(){
+        if (consulta.matches) {
+          $burguerButton.addEventListener('touchstart', toggleMenu);
+        }else{
+          $burguerButton.removeEventListener('touchstart', toggleMenu);
+        }
+      }
+      mediaQuery();
+
+      //gestos touch
+      function showMenu(){
+        $menu.classList.add('active');
+      };
+      function hideMenu(){
+        $menu.classList.remove('active');
+      };
+
+      var $body = document.body;
+      var gestos = new Hammer($body);
+        gestos.on('swipeleft', hideMenu);
+        gestos.on('swiperight', showMenu);
+
+</script>
 </html>
