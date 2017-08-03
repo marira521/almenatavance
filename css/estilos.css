@@ -11,10 +11,11 @@ header{
   margin: 0;
   padding: 0;
   z-index: 5;
+  font-family: 'Droid Serif', serif;
 }
 .container{
   /*background: #ceffda;*/
-  width: 80%;
+  width: 70%;
   height: 118px;
   color: #47700e;
   padding: 0;
@@ -56,13 +57,17 @@ header{
   margin: 0 10px;
 }
 /*fin de menu*/
-
+/*slider*/
+.carousel .slide{
+  font-family: 'Droid Serif', serif;
+}
 /*categorias en index*/
 .categorias{
   width: 100%;
   height: 600px;
   display: flex;
   justify-content: space-between;
+  font-family: 'Droid Serif', serif;
 }
 .imagen{
   width: 636px;
@@ -73,7 +78,7 @@ header{
   position: relative;
 }
 .uno{
-  background-color: #82ffb8;
+  background-image: url("../img/Moringa.jpg");
 }
 .dos{
   background-color: #7ebdfc;
@@ -83,13 +88,27 @@ header{
 }
 .descripcionCategorias{
   height: 200px;
-  width: 50%;
+  width: 100%;
   position: absolute;
   margin-left:auto;
   margin-right:auto;
-  left: 0;
-  right: 0;
   top: 50%;
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+.descripcionCategorias a{
+  text-decoration: none;
+  color: #85d319;
+  font-size: 28px;
+}
+.descripcionCategorias a:hover{
+  text-decoration: none;
+  color: #b4f954;
+}
+.descripcionCategorias a:visited{
+  text-decoration: none;
+  color: #b4f954;
 }
 /*final categorias en index*/
 /*productos*/
@@ -97,6 +116,7 @@ header{
   width: 930px;
   margin: 0 auto;
   display: block;
+  font-family: 'Droid Serif', serif;
 }
 .containerQuienes, .contenedorDecorado{
   position: relative;
@@ -138,6 +158,7 @@ header{
   overflow: hidden;
   transition: 1s;
   position: relative;
+  font-family: 'Droid Serif', serif;
 }
 .productos img{
   display: block;
