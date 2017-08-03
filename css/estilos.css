@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
 body{
-  font-family: 'Droid Serif', serif;
+  font-family: 'Lato', sans-serif;
 }
 /*menu*/
 header{
@@ -11,7 +11,7 @@ header{
   margin: 0;
   padding: 0;
   z-index: 5;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Lato', sans-serif;
 }
 .container{
   /*background: #ceffda;*/
@@ -59,15 +59,54 @@ header{
 /*fin de menu*/
 /*slider*/
 .carousel .slide{
-  font-family: 'Droid Serif', serif;
+  font-family: 'Lato', sans-serif;
 }
 /*categorias en index*/
+/*hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+    width: 90%;
+    border-color: green;
+}*/
+hr {
+  height: 30px;
+  border-style: solid;
+  border-color: #47700e;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+hr:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #47700e;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+.titulosBlog{
+  font-size: 32px;
+  color: #47700e;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+.contenidoBlog{
+  text-align: justify;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
 .categorias{
   width: 100%;
   height: 600px;
   display: flex;
   justify-content: space-between;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Lato', sans-serif;
 }
 .imagen{
   width: 636px;
@@ -78,13 +117,13 @@ header{
   position: relative;
 }
 .uno{
-  background-image: url("../img/Moringa.jpg");
+  background-image: url("../img/moringa.png");
 }
 .dos{
-  background-color: #7ebdfc;
+  background-image: url("../img/apio2.jpg");
 }
 .tres{
-  background-color: #fc7e7e;
+  background-image: url("../img/med.jpg");
 }
 .descripcionCategorias{
   height: 200px;
@@ -116,7 +155,7 @@ header{
   width: 930px;
   margin: 0 auto;
   display: block;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Lato', sans-serif;
 }
 .containerQuienes, .contenedorDecorado{
   position: relative;
@@ -158,7 +197,7 @@ header{
   overflow: hidden;
   transition: 1s;
   position: relative;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Lato', sans-serif;
 }
 .productos img{
   display: block;
