@@ -118,12 +118,15 @@ hr:before {
 }
 .uno{
   background-image: url("../img/moringa.png");
+  background-position: center;
 }
 .dos{
-  background-image: url("../img/apio2.jpg");
+  background-image: url("../img/apio.png");
+  background-position: center;
 }
 .tres{
-  background-image: url("../img/med.jpg");
+  background-image: url("../img/polen.png");
+  background-position: center;
 }
 .descripcionCategorias{
   height: 200px;
@@ -151,11 +154,12 @@ hr:before {
 }
 /*final categorias en index*/
 /*productos*/
-.containerProductos, .containerQuienes{
+.containerProductos, .containerQuienes, .containerBlog{
   width: 930px;
   margin: 0 auto;
   display: block;
   font-family: 'Lato', sans-serif;
+  font-size: 18px;
 }
 .containerQuienes, .contenedorDecorado{
   position: relative;
@@ -231,7 +235,7 @@ hr:before {
 p#informacion{
   color: black;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 13px;
 }
 p#informacion b{
   font-size: 1.5em;
@@ -397,6 +401,27 @@ p#informacion b{
 .containerQuienes iframe{
   margin-top: 300px;
   width: 100vw;
+}
+.containerBlog{
+  width: 100vw;
+}
+.contenidoBlog{
+  margin: 15px;
+}
+.uno{
+  background-image: url("../img/moringapequeña.png");
+  background-position: center;
+}
+.dos{
+  background-image: url("../img/apio.png");
+  background-position: center;
+}
+.tres{
+  background-image: url("../img/polenpequeño.png");
+  background-position: center;
+}
+.containerBlog img{
+  width: 100%;
 }
 .mapa{
   display: block;
