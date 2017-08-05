@@ -13,7 +13,6 @@
 
         <!-- Custom CSS -->
         <link href="css/full-slider.css" rel="stylesheet">
-
     <!--Start of Zendesk Chat Script Zopim-->
 <!-- <script type="text/javascript">
 window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
@@ -25,14 +24,14 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 <!--End of Zendesk Chat Script-->
   </head>
   <body>
-    <header>
-      <section class="container" id="container">
-        <figure id="logo" class="logo">
-          <img id="logoImagen" src="img/LOGO ALMENAT.png" alt="">
+    <header class="large" id="large">
+      <div class="contenedorMenu">
+        <figure class="logo" id="logo">
+          <img src="img/LOGO ALMENAT.png" alt="">
         </figure>
         <span id="burguer-button" class="burguer-button icon-menu">Menú</span>
         <nav class="menu" id="menu">
-          <ul id="opciones" class="opciones">
+          <ul>
             <li class="menuOpciones"><a href="index.html">Inicio</a></li>
             <li class="menuOpciones"><a href="productos.html">Productos</a></li>
             <li class="menuOpciones"><a href="quienes.html">Quienes Somos</a></li>
@@ -40,8 +39,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
             <li class="menuOpciones"><a href="blog.html">Blog</a></li>
           </ul>
         </nav>
-      </section>
+      </div>
     </header>
+    <div class="espacioMenu"></div>
     <!-- Full Page Image Background Carousel Header -->
     <section id="myCarousel" class="carousel slide">
         <!-- Indicators -->
@@ -55,24 +55,18 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
         <div class="carousel-inner">
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 1</h2>
-                </div>
+                <div class="fill"><img src="img/slider1.png" alt=""></div>
+
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 2</h2>
-                </div>
+                <div class="fill"><img src="img/slider2.png" alt=""></div>
+
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 3</h2>
-                </div>
+                <div class="fill"><img src="img/slider3.png" alt=""></div>
+
             </div>
         </div>
 
@@ -87,8 +81,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
     </section>
 
     <section class="categorias">
-      <div class="imagen uno"><div class="descripcionCategorias"><h1>¿Para qué es buena la moringa?<br></h1><h2>15 usos medicinales comprobados.<br></h2><h3><a href="blog.html#moringa">link</a></h3></div></div>
-      <div class="imagen dos"><div class="descripcionCategorias"><h1>Apio<br></h1><h2>Beneficios nutricionales y medicinales.<br></h2><h3><a href="blog.html#apio">link</a></h3></div></div>
+      <div class="imagen uno"><div class="descripcionCategorias"><h1>¿Para qué es buena la moringa?<br></h1><h3><a href="blog.html#moringa">link</a></h3></div></div>
+      <div class="imagen dos"><div class="descripcionCategorias"><h2>Beneficios nutricionales y medicinales.<br></h2><h3><a href="blog.html#apio">link</a></h3></div></div>
       <div class="imagen tres"><div class="descripcionCategorias"><h1>Polen de abeja<br></h1><h2>Propiedades y beneficios.<br></h2><h3><a href="blog.html#polen">link</a></h3></div></div>
     </section>
   </body>
@@ -108,25 +102,19 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
   <script type="text/javascript">
 
-  window.addEventListener('scroll', function(e){
-    console.log(window.scrollY);
-                if(window.scrollY > 100){
-                  document.getElementById('container').style.height = "80px";
-                  document.getElementById('container').style.width = "100%";
-                  document.getElementById('container').style.backgroundColor = "white";
-                  document.getElementById('logo').style.display = "none";
-                  document.getElementById("menu").style.top = "25px";
-                  document.getElementById("menu").style.right = "25px";
-                }else{
-                  if (window.scrollY < 100) {
-                    document.getElementById('container').style.height = "118px";
-                    document.getElementById('container').style.width = "70%";
-                    document.getElementById('logo').style.display = "block";
-                    document.getElementById("menu").style.top = "30px";
-                    document.getElementById("menu").style.right = "0px";
-                  }
-                }
-        });
+  $(document).on("scroll", function() {
+
+if($(document).scrollTop()>50) {
+  $("header").addClass("small");
+  $("nav").addClass("menuSmall");
+  document.getElementById('logo').style.display = "none";
+} else {
+  $("header").removeClass("small");
+  $("nav").removeClass("menuSmall");
+  document.getElementById('logo').style.display = "block";
+}
+
+});
 // burguer menu
         var consulta = window.matchMedia('(max-width: 500px)');
         consulta.addListener(mediaQuery);

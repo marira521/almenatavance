@@ -6,16 +6,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
-    <header>
-      <section class="container" id="container">
-        <figure id="logo" class="logo">
-          <img id="logoImagen" src="img/LOGO ALMENAT.png" alt="">
+    <header class="large" id="large">
+      <div class="contenedorMenu">
+        <figure class="logo" id="logo">
+          <img src="img/LOGO ALMENAT.png" alt="">
         </figure>
         <span id="burguer-button" class="burguer-button icon-menu">Menú</span>
         <nav class="menu" id="menu">
-          <ul id="opciones" class="opciones">
+          <ul>
             <li class="menuOpciones"><a href="index.html">Inicio</a></li>
             <li class="menuOpciones"><a href="productos.html">Productos</a></li>
             <li class="menuOpciones"><a href="quienes.html">Quienes Somos</a></li>
@@ -23,8 +24,10 @@
             <li class="menuOpciones"><a href="blog.html">Blog</a></li>
           </ul>
         </nav>
-      </section>
+      </div>
     </header>
+    <div class="espacioMenu"></div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></button>
     <div class="contenedorFondo">
       <section class="containerProductos">
         <!-- producto 1 -->
@@ -58,17 +61,11 @@
                   <!-- imagen modal -->
                   <!-- infomodal -->
                   <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-4">
                         <b>Ingredientes:</b>
-                      </div>
-                      <div class="col-md-4 col-md-offset-4">
                         Malta, Agua Purificada, Proteína Hidrolizada de Soya, Sorbitol 70% (Edulcorante), Polidextrosa (Fibra Natural), Chontaduro, Borojo, Gluconato de calcio (Fuente de calcio),
                           Goma Xanthan (Viscosante), Fosfato Tricálcico (fuente de calcio y fósforo), Lecitina de soya (Emulsionante), Polen, Miel de abeja Colorante natural caramelo líquido, Sabor artificial (saborizante), Vitamina C, Benzoato de sodio (conservante),
                           Ácido critico (Acidulante), Metilparabeno sódico (preservante), Estevia (Edulcorante), Sulfato ferroso (Fuente de Hierro), Vitamina E, Sulfato de Zinc (fuente de Zn), Niacina (Vitamina), Vitamina A T500, Acido pantotenico (Vitamina),
                           Propil parabeno sódico (preservante), Vitamina B6 (Piridoxina), Vitamina B2 (Riboflavina), Sulfato de cobre pentahidrato, Vitamina B1 (Tiamina), Vitamina d3 T500 (calciferol), Ácido fólico, Vitaminas K y B12 (Cianocobolamina).
-                      </div>
-                    </div>
                   </div>
                   <!-- infomodal -->
                 </div>
@@ -83,8 +80,11 @@
         <div class="productos">
           <div id="productosInfo">
             <p id="informacion">
-              Tricad-max<br>
-
+              <b>Tricad-max</b><br>
+              Presentación 250gr<br><br>
+              Registro Invima RSAV11I23314<br><br>
+              Alimento natural a base de Citrato de Calcio enriquecido con Magnesio, Zinc, vitamida C y D que ayuda a prevenir el desgaste de la masa ósea.<br>
+              <br>Previene la Osteoporosis<br>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-2">Detalles</button></p>
           </div>
           <div class="imgProductos">
@@ -108,14 +108,8 @@
                   <!-- imagen modal -->
                   <!-- infomodal -->
                   <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-4">
                         <b>Ingredientes:</b>
-                      </div>
-                      <div class="col-md-4 col-md-offset-4">
                         Maltodextrina (vehiculo), Proteina de soya, avena, lactosuero, polidextrosa (Fibra natural), fécula, fosfato tricalcico (fuente de calcio), Citrato de calcio (fuente de calcio), saborizante artificial, colágeno, Cloruro de magnesio, CMC de alta (Espesante), Dioxido de silicio (Anticompactante), Estevia (Edulcorante), Benzoato de sodio (Conservante), Zinc (fuente de Zn), Vitamina A, Vitamina E, Sulfato de maganeso, Vitamina D3.
-                      </div>
-                    </div>
                   </div>
                   <!-- infomodal -->
                 </div>
@@ -133,9 +127,9 @@
               <b>Almegen</b><br>
               Presentación 360gr<br><br>
               Registro Invima: RSAV19I20114<br><br>
-              Almalaki, defensas.<br>
+              Almalaki, defensas.<br><br>
               Contiene antioxidantes. Sus componentes se encuentran bio-disponibles a nivel celular. Excelentes resultados en tratamientos de dolencias óseas, artritis en todas sus ramificaciones, el reumatismo y otras dolencias degenerativas de la estructura ósea. Potente antibiótico y antiviral.
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-3">Detalles</button></p>
+              <br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-3">Detalles</button></p>
           </div>
           <div class="imgProductos">
             <img src="img/3.png" alt="">
@@ -158,14 +152,8 @@
                   <!-- imagen modal -->
                   <!-- infomodal -->
                   <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-4">
                         <b>Ingredientes:</b>
-                      </div>
-                      <div class="col-md-4 col-md-offset-4">
                         Malta, Agua Purificada, Proteína Hidrolizada de Soya, Sorbitol 70% (Edulcorante), Polidextrosa (Fibra Natural), Colageno, Amalaki, Gluconato de calcio (fuente de calcio), Goma Xanthan (Vicosante), Te Verde (Camelia sinesis), Fosfato Tricalcio (fuente de calcio y fosforo), Colorante artificial caramelo, MSM (Metil sulfonil metano), Cloruro de magnesio, Vitamina C, Omega 3, Ajo (Saborizante natural), Curcuma (Colorante natural), Benzoato de sodio (conservante), Ácido cítrico (Acidulante), Metil parabeno sódico (preservante),  Estevia (Edulcorante), sulfato ferroso (Fuente de Hierro), Vitamina E, Sulfacto de Zinc (fuente de Zn), Jenjibre, Niacina (Vitamina), Vitamina A T500, Acido pantotenico (Vitamina), Propil parabeno sódico (preservante), Vitamina B6 (Piridoxina), Vitamina B2 (Riboflavina), Vitamina B1 (Tiamina), Vitamina d3 T500 (calciferol), Ácido folico, Vitaminas K y B12 (Cianocobolamina).
-                      </div>
-                    </div>
                   </div>
                   <!-- infomodal -->
                 </div>
@@ -182,7 +170,7 @@
             <p id="informacion"><b>Almorin</b><br>
               Presentación 360gr<br><br>
               Registro Invima: RSAV19I20114<br><br>
-              Moringa, nutriente<br>
+              Moringa, nutriente.<br>
               Recurso valioso que ayuda a prevenir la desnutrición y a vivir de manera saludable y con mas energía. El contenido de proteínas, vitaminas y minerales hacen de este producto nutriente necesario para suplir las necesidades básicas de nuestro organismo.<br>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-4">Detalles</button></p>
           </div>
@@ -207,14 +195,8 @@
                   <!-- imagen modal -->
                   <!-- infomodal -->
                   <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-4">
                         <b>Ingredientes:</b>
-                      </div>
-                      <div class="col-md-4 col-md-offset-4">
                         Malta, Agua Purificada, Proteína Hidrolizada de Soya, Sorbitol 70% (Edulcorante), Polidextrosa (Fibra Natural), Moringa hojas, Gluconato de calcio (fuente de calcio), Goma Xanthan (Vicosante), Fosfato Tricalcio (fuente de calcio y fosforo), Lecitina de soya (emulcionante), Colorante artificial verde No 3 Cl 42053, Saborizante artificial, Vitamina C, Benzoato de sodio (conservante), Ácido cítrico (Acidulante), Metil parabeno sódico (preservante),  Estevia (Edulcorante), sulfato ferroso (Fuente de Hierro), Vitamina E, Sulfacto de Zinc (fuente de Zn), Niacina (Vitamina), Vitamina A T500, Acido pantotenico (Vitamina), Propil parabeno sódico (preservante), Vitamina B6 (Piridoxina), Vitamina B2 (Riboflavina), Sulfato de cobre pentahidrato, Vitamina B1 (Tiamina), Vitamina d3 T500 (calciferol), Ácido folico, Vitaminas K y B12 (Cianocobolamina).
-                      </div>
-                    </div>
                   </div>
                   <!-- infomodal -->
                 </div>
@@ -232,7 +214,7 @@
               <b>Der Bio Pat</b><br>
               Presentación 6 frascos x 14ml 6 frascos x 5ml<br><br>
               Registro Invima: RSAV19I20114<br><br>
-              Anticansancio
+              Anticansancio.<br>
               Escelente multivitamínico con huevo de pato liofilizado, Jale real, Magnesio, Vitamina C y Complejo B. Nutre y aumenta la actividad enzimática y la hemoglobina.<br>
 
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-5">Detalles</button></p>
@@ -258,14 +240,8 @@
                   <!-- imagen modal -->
                   <!-- infomodal -->
                   <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-4">
                         <b>Ingredientes:</b>
-                      </div>
-                      <div class="col-md-4 col-md-offset-4">
                         Malta, Agua Purificada, Proteína Hidrolizada de Soya, Sorbitol 70% (Edulcorante), Polidextrosa (Fibra Natural), Aloe, Huevo de pato liofilizado, gluconato de calcio (fuente de calcio), Goma Xanthan (Vicosante), Fosfato Tricalcio (fuente de calcio y fosforo), Lecitina de soya (emulcionante), Colorante natural caramelo liquido, Saborizante artificial (saborizante), Vitamina C, Benzoato de sodio (conservante), Ácido cítrico (Acidulante), Metil parabeno sódico (preservante),  Estevia (Edulcorante), sulfato ferroso (Fuente de Hierro), Vitamina E, Sulfato de Zinc (fuente de Zn), Niacina (Vitamina), Vitamina A T500, Acido pantotenico (Vitamina), Propil parabeno sódico (preservante), Vitamina B6 (Piridoxina), Vitamina B2 (Riboflavina), Sulfato de cobre pentahidrato, Vitamina B1 (Tiamina), Vitamina d3 T500 (calciferol), Ácido fólico, Vitaminas K y B12 (Cianocobolamina).
-                      </div>
-                    </div>
                   </div>
                   <!-- infomodal -->
                 </div>
@@ -306,15 +282,9 @@
                   <!-- imagen modal -->
                   <!-- infomodal -->
                   <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-4">
                         <b>Ingredientes:</b>
-                      </div>
-                      <div class="col-md-4 col-md-offset-4">
                         Maltodextrina (vehiculo), Proteína de soya, lactosuero, fécula, Avena, polidextrosa (Fibra natural), proteína de suero, creatina monohidrato, albumina de huevo, fosfato tricálcico (fuente de calcio), Citrato de calcio (fuente de calcio), saborizante artificial, óxido de magnesio, CMC de alta (espesante), Dióxido de silicio (Anticompactante), Vitamina C, Vitamina E, Benzoato de sodio (Conservante), Estevia (Edulcorante), Omega 3, 6 y 9, fumarato ferroso (fuente de hierro), niacina, Sulfato de Zinc (fuente de Zn), acido pantoténico, Vitamina A, vitamina B6, Sulfato de cobre, Sulfato de Magneso, Vitamina B1, B2, picolinato de cromo, biotina, ácido fólico, vitamina D3 T500, yoduro de potasio, vitaminas K y B12.
                         Contiene tartrazina puede causar hipersensibilidad.
-                      </div>
-                    </div>
                   </div>
                   <!-- infomodal -->
                 </div>
@@ -331,7 +301,7 @@
             <p id="informacion"><b>BioLion</b><br>
               Presentación 450gr<br><br>
               Registro Invima: RSAV11I23314<br><br>
-              Energico – vigorizante <br>
+              Energico – vigorizante. <br>
               Los ingredientes naturales lo convierten en un poderoso suplemento destinado a brindar una efectiva dosis de energía y vitalidad. Ayuda a eliminar problemas de estrés, fatiga y cansancio. Ofrece una estimulación que restaura la vitalidad sexual.
               La mezcla con vitaminas y minerales estabiliza el organismo para un normal funcionamiento.<br>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-7">Detalles</button></p>
@@ -339,14 +309,14 @@
           <div class="imgProductos">
             <img src="img/8.png" alt="">
           </div>
-          <br><p class="tituloProducto">descripción del producto</p>
+          <br><p class="tituloProducto">BioLion</p>
           <!-- modal -->
           <div class="modal fade" id="modal-7">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
                   <button class="close" type="button" data-dismiss="modal">&times;</button>
-                  <h1 class="modal-title">Titulo</h1><br>
+                  <h1 class="modal-title">BioLion</h1><br>
                 </div>
                 <!-- modal body -->
                 <div class="modal-body">
@@ -357,14 +327,8 @@
                   <!-- imagen modal -->
                   <!-- infomodal -->
                   <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-4">
                         <b>Ingredientes:</b>
-                      </div>
-                      <div class="col-md-4 col-md-offset-4">
-                        descripción del producto
-                      </div>
-                    </div>
+                        Maltodextrina (vehiculo), Proteína de soya, lactosuero, fécula, Avena, Borojo, Chontaduro, Maca, Guarana polvo, Polen, saborizante artificial, Dióxido de silicio (Anticompactante),  CMC de alta (espesante), L-arginina, Canela, Benzoato de sodio (Conservante), Estevia (Edulcorante), Vitamina E, Vitamina B6, B1 y B2.<br>
                   </div>
                   <!-- infomodal -->
                 </div>
@@ -381,7 +345,7 @@
             <p id="informacion"><b>Forbi-Max</b><br>
             Presentación 550gr<br><br>
             Registro Invima: RSAV11I23314<br><br>
-            Colon<br>
+            Colon.<br>
             Ideal para el estreñimiento y acides estomacal; lubrica y regenera la flora instestinal, elimina toxinas contaminantes. Es un depurativo rico en Potasio y Hierro.
             <br>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-8">Detalles</button></p>
@@ -407,14 +371,8 @@
                   <!-- imagen modal -->
                   <!-- infomodal -->
                   <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-4">
                         <b>Ingredientes:</b>
-                      </div>
-                      <div class="col-md-4 col-md-offset-4">
                         Maltodextrina (vehiculo), salvado de trigo, linaza, avena, polidextrosa (Fibra natural), fibra de manzana, germen de trigo, papaya liofilizada, te verde (camellia sinensis), saborizante artificial, pitahaya liofilizada, ciruela liofilizada, piña liofilizada, psyllium, Dioxido de silicio (Anticompactante), Estevia (Edulcorante), Benzoato de sodio (Conservante).
-                      </div>
-                    </div>
                   </div>
                   <!-- infomodal -->
                 </div>
@@ -428,19 +386,24 @@
         <!-- producto 9 -->
         <div class="productos">
           <div id="productosInfo">
-            <p id="informacion">Biotina<br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-9">Detalles</button></p>
+            <p id="informacion">
+              <b>Kola G-Nut</b><br>
+              Presentación 800gr<br><br>
+              Registro Invima RSAV11I23314<br><br>
+              El Colágeno es una de las más importantes proteínas del cuerpo, ayuda a regular y alimentar todas las células, mantiene saludables las articulaciones, la masa y el tono muscular, revigoriza la piel, pestañas.<br>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-9">Detalles</button></p>
           </div>
           <div class="imgProductos">
             <img src="img/10.png" alt="">
           </div>
-          <br><p class="tituloProducto">Biotina</p>
+          <br><p class="tituloProducto">Kola G-Nut</p>
           <!-- modal -->
           <div class="modal fade" id="modal-9">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
                   <button class="close" type="button" data-dismiss="modal">&times;</button>
-                  <h1 class="modal-title">Biotina</h1><br>
+                  <h1 class="modal-title">Kola G-Nut</h1><br>
                 </div>
                 <!-- modal body -->
                 <div class="modal-body">
@@ -451,14 +414,8 @@
                   <!-- imagen modal -->
                   <!-- infomodal -->
                   <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-4">
                         <b>Ingredientes:</b>
-                      </div>
-                      <div class="col-md-4 col-md-offset-4">
                         Maltodextrina (vehiculo), Proteina de soya, avena, lactosuero, polidextrosa (Fibra natural), fécula, fosfato tricalcico (fuente de calcio), Citrato de calcio (fuente de calcio), saborizante artificial, colágeno, Cloruro de magnesio, CMC de alta (Espesante), Dioxido de silicio (Anticompactante), Estevia (Edulcorante), Benzoato de sodio (Conservante), Omega 3, 6 y 9, Vitamina C, sulfato de Zinc (fuente de Zn), Vitamina A, Vitamina E, Sulfato de maganeso, Vitamina D3.
-                      </div>
-                    </div>
                   </div>
                   <!-- infomodal -->
                 </div>
@@ -501,14 +458,8 @@
                   <!-- imagen modal -->
                   <!-- infomodal -->
                   <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-4">
                         <b>Ingredientes:</b>
-                      </div>
-                      <div class="col-md-4 col-md-offset-4">
                         Malta, Agua Purificada, Proteína Hidrolizada de Soya, Sorbitol 70% (Edulcorante), Polidextrosa (Fibra Natural), Aloe, Huevo de pato liofilizado, gluconato de calcio (fuente de calcio), Goma Xanthan (Vicosante), Fosfato Tricalcio (fuente de calcio y fosforo), Lecitina de soya (emulcionante), Colorante natural caramelo liquido, Saborizante artificial (saborizante), Vitamina C, Benzoato de sodio (conservante), Ácido cítrico (Acidulante), Metil parabeno sódico (preservante),  Estevia (Edulcorante), sulfato ferroso (Fuente de Hierro), Vitamina E, Sulfato de Zinc (fuente de Zn), Niacina (Vitamina), Vitamina A T500, Acido pantotenico (Vitamina), Propil parabeno sódico (preservante), Vitamina B6 (Piridoxina), Vitamina B2 (Riboflavina), Sulfato de cobre pentahidrato, Vitamina B1 (Tiamina), Vitamina d3 T500 (calciferol), Ácido fólico, Vitaminas K y B12 (Cianocobolamina).
-                      </div>
-                    </div>
                   </div>
                   <!-- infomodal -->
                 </div>
@@ -526,8 +477,8 @@
               <b>Mero Mn</b><br>
               Presentación 12 frascos, 20ml c/u<br><br>
               Registro Invima: RSAV19I20114<br><br>
-              Energético – Vigorizante
-Efectivo para fortalecer la energía y la salud gracias a los ingredientes naturales, dando una dosis de vitalidad, mejorando el desempeño sexual y aumentando el libido en hombres y mujeres.
+              Energético – Vigorizante.<br>
+              Efectivo para fortalecer la energía y la salud gracias a los ingredientes naturales, dando una dosis de vitalidad, mejorando el desempeño sexual y aumentando el libido en hombres y mujeres.
 
             <br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-11">Detalles</button></p>
           </div>
@@ -552,14 +503,8 @@ Efectivo para fortalecer la energía y la salud gracias a los ingredientes natur
                   <!-- imagen modal -->
                   <!-- infomodal -->
                   <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-4">
                         <b>Ingredientes:</b>
-                      </div>
-                      <div class="col-md-4 col-md-offset-4">
                         Malta, Agua Purificada, Proteína Hidrolizada de Soya, Sorbitol 70% (Edulcorante), Polidextrosa (Fibra Natural), Chontaduro, Borojo, gluconato de calcio (fuente de calcio), Goma Xanthan (Vicosante), Fosfato Tricalcio (fuente de calcio y fosforo), Lecitina de soya (emulcionante), Colorante natural caramelo liquido, Sabor artificial (saborizante), Vitamina C, Benzoato de sodio (conservante), Ácido cítrico (Acidulante), Metil parabeno sódico (preservante),  Estevia (Edulcorante), sulfato ferroso (Fuente de Hierro), Vitamina E, Sulfato de Zinc (fuente de Zn), Niacina (Vitamina), Vitamina A T500, Acido pantotenico (Vitamina), Propil parabeno sódico (preservante), Vitamina B6 (Piridoxina), Vitamina B2 (Riboflavina), Sulfato de cobre pentahidrato, Vitamina B1 (Tiamina), Vitamina D3 T500 (calciferol), Ácido fólico, Vitaminas K y B12 (Cianocobolamina).
-                      </div>
-                    </div>
                   </div>
                   <!-- infomodal -->
                 </div>
@@ -577,7 +522,7 @@ Efectivo para fortalecer la energía y la salud gracias a los ingredientes natur
               <b>Poyenvit</b><br>
               Presentación 800gr<br><br>
               Registro Invima: RSAV11I23314<br><br>
-              Contiene complejo B y vitamina C
+              Contiene complejo B y vitamina C.<br>
               Multivitamínico y multimineral que da una correcta nutrición en la niñez. Esencial para el correcto desarrollo físico, ayudando a suministrar los nutrientes necesarios para una optima salud infantil.
 
             <br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-12">Detalles</button></p>
@@ -603,15 +548,9 @@ Efectivo para fortalecer la energía y la salud gracias a los ingredientes natur
                   <!-- imagen modal -->
                   <!-- infomodal -->
                   <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-4">
                         <b>Ingredientes:</b>
-                      </div>
-                      <div class="col-md-4 col-md-offset-4">
                         Maltodextrina (vehiculo), Proteina de soya, lactosuero, fécula, Avena, polidextrosa (Fibra natural), proteína de suero, creatina monohidrato, albumina de huevo, Fosfato tricalcico (fuente de calcio), Citrato de calcio (fuente de calcio), saborizante artificial, oxido de magnesio, CMC de alta (espesante), Dioxido de silicio (Anticompactante), Vitamina C, Vitamina E, Benzoato de sodio (Conservante), Estevia (Edulcorante), Omega 3, 6, 9, Fumarato ferroso (fuente de hierro), Niacina, Sulfato de Zinc (fuente de Zn), Acido pantoténico, Vitamina A, Vitamina B6, Sulfato de Cobre, Sulfato de manganeso, Vitaminas B1, B2, Picolinato de cromo, Biotina, Ácido fólico, Vitamina D3 T500, yoduro de potasio, Vitaminas K y B12.
                         Contiene tartrazina puede causar hipersensibilidad.
-                      </div>
-                    </div>
                   </div>
                   <!-- infomodal -->
                 </div>
@@ -629,7 +568,7 @@ Efectivo para fortalecer la energía y la salud gracias a los ingredientes natur
               <b>Xtren Plus</b><br>
               Presentación 450gr<br><br>
               Registro Invima: RSAV11I23314<br><br>
-              Sobrepeso.
+              Sobrepeso.<br>
               Excelente quemador de grasa que ayuda a gastar más energía; brinda sensación de saciedad alejando el hambre y provocando que podamos hacer dieta, emulsiona las grasas haciendo que estén en constante movimiento y evitando que se acumulen en zonas específicas que tienden a guardar depósitos de grasa como cadera muslo y abdomen.
 
             <br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-13">Detalles</button></p>
@@ -655,14 +594,8 @@ Efectivo para fortalecer la energía y la salud gracias a los ingredientes natur
                   <!-- imagen modal -->
                   <!-- infomodal -->
                   <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-4">
                         <b>Ingredientes:</b>
-                      </div>
-                      <div class="col-md-4 col-md-offset-4">
                         Maltodesctrina (Vehiculo), Proteina de soya, Destroxa anhidra, Fécula, Polidestrosa (fibra natural), Avena, Lecitina de soya, Té verde (camelia sinensis), Linaza, Psyllium (psilio, ispágula), Acai (Euterpe oleracea) polvo, Guaraná polvo (Paullinia cupana), Citrato de calcio (fuente de calcio), fosfato tricálcico (fuente de calcio), saborizante artificial, Dióxido de silicio (Anti-compactante), Jenjibre (Zingiber officinale), CMC de alta (espesante), Canela, Vitamina C, Benzoato de sodio (conservante), Estevia (edulcorante), Ácido Pantotéico, Vitamina B6, Vitamina B1, B2 y Picolinato de cromo.
-                      </div>
-                    </div>
                   </div>
                   <!-- infomodal -->
                 </div>
@@ -680,7 +613,7 @@ Efectivo para fortalecer la energía y la salud gracias a los ingredientes natur
               <b>Forcidad</b><br>
               Presentación caja 15x10ml 15x10grs 30 perlas omega 3<br><br>
               Registro Invima: RSAV19I20114<br><br>
-              Antivejez.
+              Antivejez.<br>
               Terapia para el revitalizador orgánico con hidrolizado de soya, Omega 3, Ginkgo Biloba y huevo de pato liofilizado. Estimula el sistema nervioso, mejora la oxigenación cerebral, aumenta la longevidad y la resistencia a enfermedades.
 
             <br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-14">Detalles</button></p>
@@ -706,14 +639,8 @@ Efectivo para fortalecer la energía y la salud gracias a los ingredientes natur
                   <!-- imagen modal -->
                   <!-- infomodal -->
                   <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-4">
                         <b>Ingredientes:</b>
-                      </div>
-                      <div class="col-md-4 col-md-offset-4">
                         Malta, Agua Purificada, Proteína Hidrolizada de Soya, Sorbitol 70% (Edulcorante), Polidextrosa (Fibra Natural), Aloe, Huevo de pato liofilizado, gluconato de calcio (fuente de calcio), Goma Xanthan (Vicosante), Fosfato Tricalcio (fuente de calcio y fosforo), Lecitina de soya (emulcionante), Colorante natural caramelo liquido, Saborizante artificial (saborizante), Vitamina C, Benzoato de sodio (conservante), Ácido cítrico (Acidulante), Metil parabeno sódico (preservante),  Estevia (Edulcorante), sulfato ferroso (Fuente de Hierro), Vitamina E, Sulfato de Zinc (fuente de Zn), Niacina (Vitamina), Vitamina A T500, Acido pantotenico (Vitamina), Propil parabeno sódico (preservante), Vitamina B6 (Piridoxina), Vitamina B2 (Riboflavina), Sulfato de cobre pentahidrato, Vitamina B1 (Tiamina), Vitamina d3 T500 (calciferol), Ácido fólico, Vitaminas K y B12 (Cianocobolamina).
-                      </div>
-                    </div>
                   </div>
                   <!-- infomodal -->
                 </div>
@@ -731,7 +658,7 @@ Efectivo para fortalecer la energía y la salud gracias a los ingredientes natur
               <b>Nut-Provitam F</b><br>
               Presentación 1000 y 1500 gr<br><br>
               Registro Invima: RSAV11I23314<br><br>
-              Masa muscular.
+              Masa muscular.<br>
               Proteína de suero de leche con gran valor bilógico. Contribuye a la recuperación y protección de las fibras musculares después de la práctica deportiva. Enriquecido con: vitaminas, minerales, colágeno y omega 3.
 
 
@@ -758,14 +685,8 @@ Efectivo para fortalecer la energía y la salud gracias a los ingredientes natur
                   <!-- imagen modal -->
                   <!-- infomodal -->
                   <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-4">
                         <b>Ingredientes:</b>
-                      </div>
-                      <div class="col-md-4 col-md-offset-4">
                         Maltodextrina (vehiculo), Proteína de soya, lactosuero, fécula, Avena, polidextrosa (Fibra natural), proteína de suero, creatina monohidrato, albumina de huevo, Citrato de calcio (fuente de calcio), fosfato tricálcico (fuente de calcio), saborizante artificial, óxido de magnesio, CMC de alta (espesante), Dióxido de silicio (Anticompactante), Vitamina C, Vitamina E, Benzoato de sodio (Conservante), Estevia (Edulcorante), Omega 3, 6 y 9, fumarato ferroso (fuente de hierro), niacina, Sulfato de Zinc (fuente de Zn), acido pantoténico, Vitamina A, vitamina B6, Sulfato de cobre, Sulfato de Magneso, Vitamina B1, B2, picolinato de cromo, biotina, ácido fólico, vitamina D3 T500, yoduro de potasio, vitaminas K y B12.
-                      </div>
-                    </div>
                   </div>
                   <!-- infomodal -->
                 </div>
@@ -783,7 +704,7 @@ Efectivo para fortalecer la energía y la salud gracias a los ingredientes natur
               <b>Nut Xtrem</b><br>
               Presentación 1000gr<br><br>
               Registro Invima: RSAV11I23314<br><br>
-              Atletas.
+              Atletas.<br>
               Alimento a base de Maltodextrina, Proteína de soya, avena, lactosuero, citrato de calcio y colágeno, omega 3, 6, 9.
 
             <br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-16">Detalles</button></p>
@@ -809,14 +730,8 @@ Efectivo para fortalecer la energía y la salud gracias a los ingredientes natur
                   <!-- imagen modal -->
                   <!-- infomodal -->
                   <div class="container-fluid">
-                    <div class="row">
-                      <div class="col-md-4">
                         <b>Ingredientes:</b>
-                      </div>
-                      <div class="col-md-4 col-md-offset-4">
                         Maltodextrina (vehiculo), Proteina de soya, Avena, lactosuero, polidextrosa (Fibra natural), Citrato de calcio (fuente de calcio), saborizante artificial, colágeno, Cloruro de magnesio, CMC de alta (espesante), Dioxido de silicio (Anticompactante), Estevia (Edulcorante), Benzoato de sodio (Conservante), Omega 3, 6 y 9, Vitamina C, Sulfato de Zinc (fuente de Zn), Vitamina A, Vitamina E, Sulfato de Magneso, Vitamina D3.
-                      </div>
-                    </div>
                   </div>
                   <!-- infomodal -->
                 </div>
@@ -827,6 +742,95 @@ Efectivo para fortalecer la energía y la salud gracias a los ingredientes natur
           <!-- fin del modal -->
         </div>
         <!-- final producto 16 -->
+        <!-- producto 17 -->
+        <div class="productos">
+          <div id="productosInfo">
+            <p id="informacion">
+              <b>Whey Prot</b><br>
+              Presentación 1500g<br><br>
+              Registro Invima: RSAV11I23314<br><br>
+              <br>
+              Alimento en polvo a base de maltodextrina con proteina de soya, lactosuero, proteina de suero y albumina de huevo
+
+            <br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-17">Detalles</button></p>
+          </div>
+          <div class="imgProductos">
+            <img src="img/17.png" alt="">
+          </div>
+          <br><p class="tituloProducto">Whey Prot</p>
+          <!-- modal -->
+          <div class="modal fade" id="modal-17">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" type="button" data-dismiss="modal">&times;</button>
+                  <h1 class="modal-title">Whey Prot</h1><br>
+                </div>
+                <!-- modal body -->
+                <div class="modal-body">
+                  <!-- imagen modal -->
+                  <div class="imagenModal">
+                    <img src="img/17.png" alt="">
+                  </div>
+                  <!-- imagen modal -->
+                  <!-- infomodal -->
+                  <div class="container-fluid">
+                        <b>Ingredientes:</b>
+                        Maltodextrina (vehiculo), Proteína de soya, Proteína de suero, lacto-suero, Fécula de maíz, Avena, polidextrosa (Fibra natural), proteína de suero, creatina monohidrato, Albumina de huevo, Citrato de calcio (fuente de calcio), fosfato tricálcico (fuente de calcio), saborizante artificial, óxido de magnesio, CMC de alta (espesante), Dióxido de silicio (Anticompactante), Benzoato de sodio (Conservante), Estevia (Edulcorante), Vitamina C, Omega 3, 6 y 9, fumarato ferroso (fuente de hierro), Vitamina E, Sulfato de Zinc (fuente de Zn), niacina, acido pantoténico, Vitamina A, Sulfato de cobre, Sulfato de Manganeso, Vitamina B6, B1, B2, picolinato de cromo, biotina, ácido fólico, vitamina D3 T500, Yoduro de potasio, Vitamina K y B12.
+                  </div>
+                  <!-- infomodal -->
+                </div>
+                <!-- fin modal body -->
+              </div>
+            </div>
+          </div>
+          <!-- fin del modal -->
+        </div>
+        <!-- final producto 17 -->
+        <!-- producto 18 -->
+        <div class="productos">
+          <div id="productosInfo">
+            <p id="informacion">
+              <b>Whey Protein</b><br>
+              Presentación 1500g<br><br>
+              Registro Invima: RSAV11I23314<br><br>
+              Alimento en polvo a base de maltodextrina con proteina de soya, proteina de suero, lactosuero y yema de huevo.
+
+            <br><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-18">Detalles</button></p>
+          </div>
+          <div class="imgProductos">
+            <img src="img/18.png" alt="">
+          </div>
+          <br><p class="tituloProducto">Whey Protein</p>
+          <!-- modal -->
+          <div class="modal fade" id="modal-18">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" type="button" data-dismiss="modal">&times;</button>
+                  <h1 class="modal-title">Whey Protein</h1><br>
+                </div>
+                <!-- modal body -->
+                <div class="modal-body">
+                  <!-- imagen modal -->
+                  <div class="imagenModal">
+                    <img src="img/18.png" alt="">
+                  </div>
+                  <!-- imagen modal -->
+                  <!-- infomodal -->
+                  <div class="container-fluid">
+                        <b>Ingredientes:</b>
+                        Maltodextrina (vehiculo), Proteína de soya, Proteína de suero, lacto-suero, yema de huevo(fuente de proteína), polidextrosa (Fibra natural), Citrato de calcio, fosfato tricálcico (fuente de calcio y fosforo), saborizante artificial, óxido de magnesio, CMC de alta (espesante), Dióxido de silicio (Anticompactante), aminoácidos (Glutamina, Arginina, Leucina, Isoleucina, Valina), Vitamina C, Vitamina E, Benzoato de sodio (Conservante), Estevia (Edulcorante), Omega 3, 6 y 9, fumarato ferroso (fuente de hierro), niacina, Sulfato de Zinc (fuente de Zn), acido pantoténico, Vitamina A, vitamina B6, Sulfato de cobre, Sulfato de Manganeso, Vitamina B1 (tiamina), Vitamina B2 (Riboflavina), picolinato de cromo, biotina, ácido fólico, vitamina D3 (calciferol), Yoduro de potasio, Vitamina K y Vitamina B12.
+                  </div>
+                  <!-- infomodal -->
+                </div>
+                <!-- fin modal body -->
+              </div>
+            </div>
+          </div>
+          <!-- fin del modal -->
+        </div>
+        <!-- final producto 18 -->
       </section>
     </div>
   </body>
@@ -835,25 +839,35 @@ Efectivo para fortalecer la energía y la salud gracias a los ingredientes natur
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 <script type="text/javascript">
 
-window.addEventListener('scroll', function(e){
-                  console.log(window.scrollY);
-                  if(window.scrollY > 100){
-                    document.getElementById('container').style.height = "80px";
-                    document.getElementById('container').style.width = "100%";
-                    document.getElementById('container').style.backgroundColor = "white";
-                    document.getElementById('logo').style.display = "none";
-                    document.getElementById("menu").style.top = "25px";
-                    document.getElementById("menu").style.right = "25px";
-                  }else{
-                    if (window.scrollY < 100) {
-                      document.getElementById('container').style.height = "118px";
-                      document.getElementById('container').style.width = "70%";
-                      document.getElementById('logo').style.display = "block";
-                      document.getElementById("menu").style.top = "30px";
-                      document.getElementById("menu").style.right = "0px";
-                    }
-                }
-      });
+$(document).on("scroll", function() {
+
+if($(document).scrollTop()>50) {
+$("header").addClass("small");
+$("nav").addClass("menuSmall");
+document.getElementById('logo').style.display = "none";
+} else {
+$("header").removeClass("small");
+$("nav").removeClass("menuSmall");
+document.getElementById('logo').style.display = "block";
+}
+
+});
+// boton subir
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("myBtn").style.display = "block";
+  } else {
+      document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 // burguer menu
       var consulta = window.matchMedia('(max-width: 500px)');
       consulta.addListener(mediaQuery);

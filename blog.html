@@ -2,20 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Almenat Contacto</title>
+    <title>Almenat Blog</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
-    <header>
-      <section class="container" id="container">
-        <figure id="logo" class="logo">
-          <img id="logoImagen" src="img/LOGO ALMENAT.png" alt="">
+    <header class="large" id="large">
+      <div class="contenedorMenu">
+        <figure class="logo" id="logo">
+          <img src="img/LOGO ALMENAT.png" alt="">
         </figure>
         <span id="burguer-button" class="burguer-button icon-menu">Menú</span>
         <nav class="menu" id="menu">
-          <ul id="opciones" class="opciones">
+          <ul>
             <li class="menuOpciones"><a href="index.html">Inicio</a></li>
             <li class="menuOpciones"><a href="productos.html">Productos</a></li>
             <li class="menuOpciones"><a href="quienes.html">Quienes Somos</a></li>
@@ -23,14 +24,18 @@
             <li class="menuOpciones"><a href="blog.html">Blog</a></li>
           </ul>
         </nav>
-      </section>
+      </div>
     </header>
+    <div class="espacioMenu"></div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></button>
     <div class="contenedorDecorado"><div class="decorado"></div></div>
     <section class="containerBlog">
       <a name="moringa"></a>
       <p>
         <h1 class="titulosBlog">¿Para qué es buena la moringa?<br><br></h1>
-        <img src="img/Moringa.jpg" alt=""><br><br><br><br>
+        <div class="imagenBlog">
+          <img src="img/moringablog.png" alt=""><br><br><br><br>
+        </div>
         <div class="contenidoBlog">
         Propiedades medicinales y nutricionales y usos de la moringa. La moringa, Moringa oleifera, es un árbol nativo de India que crece en países subtropicales del continente asiático y africano. Tradicionalmente, de la moringa se utilizan sus hojas, vainas, semillas, aceite, flores, raíces, ramas y corteza tanto para consumo alimenticio como para recuperar y mantener la salud debido a sus cualidades terapéuticas. Cuando leas el artículo verás que no es una casualidad que a la moringa se le llame el árbol de la vida.<br><br>
 
@@ -81,7 +86,9 @@
       <hr>
       <p>
         <h1 class="titulosBlog">Los beneficios nutricionales y medicinales del apio<br></h1>
-        <img src="img/apio2.jpg" alt=""><br><br><br>
+        <div class="imagenBlog">
+          <img src="img/apio2.jpg" alt=""><br><br><br>
+        </div>
         <div class="contenidoBlog">
         El apio es una hortaliza muy saludable con grandes propiedades nutricionales y medicinales. No puede faltar a la hora de preparar caldos y platos tan completos, nutritivos y tradicionales como los potajes o pucheros. Hipócrates ya lo utilizaba por sus propiedades medicinales y los romanos y griegos lo utilizaban tanto por sus usos culinarios como curativos. Desde luego, es una verdura importante a incluir de forma habitual, en especial si estás haciendo dieta para adelgazar y quieres perder peso de forma saludable.<br><br>
 
@@ -142,7 +149,9 @@
       <hr>
       <p>
         <h1 class="titulosBlog">Polen de abeja: propiedades y beneficios<br><br></h1>
-        <img src="img/med.jpg" alt=""><br><br><br>
+        <div class="imagenBlog">
+          <img src="img/med.jpg" alt=""><br><br><br>
+        </div>
         <div class="contenidoBlog">
         El polen de abejas es un pequeño tesoro alimenticio del que cada vez se descubren más sustancias nutritivas. Su compleja composición contiene valiosas enzimas, vitaminas y minerales que hacen de él un complemento ideal para reforzar el sistema inmunológico especialmente en épocas de cambio de estación.
         <br><br>
@@ -199,29 +208,41 @@
       </p>
     </section>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
   <script type="text/javascript">
 
-  window.addEventListener('scroll', function(e){
-    console.log(window.scrollY);
-                if(window.scrollY > 100){
-                  document.getElementById('container').style.height = "80px";
-                  document.getElementById('container').style.width = "100%";
-                  document.getElementById('container').style.backgroundColor = "white";
-                  document.getElementById('logo').style.display = "none";
-                  document.getElementById("menu").style.top = "25px";
-                  document.getElementById("menu").style.right = "25px";
-                }else{
-                  if (window.scrollY < 100) {
-                    document.getElementById('container').style.height = "118px";
-                    document.getElementById('container').style.width = "70%";
-                    document.getElementById('logo').style.display = "block";
-                    document.getElementById("menu").style.top = "30px";
-                    document.getElementById("menu").style.right = "0px";
+  $(document).on("scroll", function() {
 
-                  }
-                }
-        });
+  if($(document).scrollTop()>50) {
+  $("header").addClass("small");
+  $("nav").addClass("menuSmall");
+  document.getElementById('logo').style.display = "none";
+  } else {
+  $("header").removeClass("small");
+  $("nav").removeClass("menuSmall");
+  document.getElementById('logo').style.display = "block";
+  }
+
+  });
+
+  // boton subir
+  window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 // burguer menu
         var consulta = window.matchMedia('(max-width: 500px)');
         consulta.addListener(mediaQuery);

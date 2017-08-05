@@ -6,16 +6,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
-    <header>
-      <section class="container" id="container">
-        <figure id="logo" class="logo">
-          <img id="logoImagen" src="img/LOGO ALMENAT.png" alt="">
+    <header class="large" id="large">
+      <div class="contenedorMenu">
+        <figure class="logo" id="logo">
+          <img src="img/LOGO ALMENAT.png" alt="">
         </figure>
         <span id="burguer-button" class="burguer-button icon-menu">Menú</span>
         <nav class="menu" id="menu">
-          <ul id="opciones" class="opciones">
+          <ul>
             <li class="menuOpciones"><a href="index.html">Inicio</a></li>
             <li class="menuOpciones"><a href="productos.html">Productos</a></li>
             <li class="menuOpciones"><a href="quienes.html">Quienes Somos</a></li>
@@ -23,8 +24,10 @@
             <li class="menuOpciones"><a href="blog.html">Blog</a></li>
           </ul>
         </nav>
-      </section>
+      </div>
     </header>
+    <div class="espacioMenu"></div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">arrow_upward</i></button>
     <div class="contenedorDecorado"><div class="decorado"></div></div>
     <section class="containerQuienes">
 
@@ -45,29 +48,40 @@
       </p>
     </section>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
   <script type="text/javascript">
 
-  window.addEventListener('scroll', function(e){
-    console.log(window.scrollY);
-                if(window.scrollY > 100){
-                  document.getElementById('container').style.height = "80px";
-                  document.getElementById('container').style.width = "100%";
-                  document.getElementById('container').style.backgroundColor = "white";
-                  document.getElementById('logo').style.display = "none";
-                  document.getElementById("menu").style.top = "25px";
-                  document.getElementById("menu").style.right = "25px";
-                }else{
-                  if (window.scrollY < 100) {
-                    document.getElementById('container').style.height = "118px";
-                    document.getElementById('container').style.width = "70%";
-                    document.getElementById('logo').style.display = "block";
-                    document.getElementById("menu").style.top = "30px";
-                    document.getElementById("menu").style.right = "0px";
+  $(document).on("scroll", function() {
 
-                  }
-                }
-        });
+  if($(document).scrollTop()>50) {
+  $("header").addClass("small");
+  $("nav").addClass("menuSmall");
+  document.getElementById('logo').style.display = "none";
+  } else {
+  $("header").removeClass("small");
+  $("nav").removeClass("menuSmall");
+  document.getElementById('logo').style.display = "block";
+  }
+
+  });
+  // boton subir
+  window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 // burguer menu
         var consulta = window.matchMedia('(max-width: 500px)');
         consulta.addListener(mediaQuery);
